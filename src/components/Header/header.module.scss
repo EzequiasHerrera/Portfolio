@@ -1,0 +1,192 @@
+@import "src/styles/colors";
+@import "src/styles/animations";
+
+.headerContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: $first-bg-color;
+  animation: opening-animation 2s forwards;
+
+  .headerFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 50px 50px;
+
+    .titleName {
+      padding: 10px;
+      font-size: 20px;
+
+      h1 {
+        font-size: 5em;
+        max-width: min-content;
+        line-height: 0.75;
+        font-weight: bolder;
+        background: $gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .linea {
+        border-top: 0.4em solid rgb(255, 255, 255);
+        width: 100%;
+        padding: 0;
+        margin: 7px auto 2px auto;
+      }
+
+      h2 {
+        color: $color;
+        font-weight: normal;
+        font-size: 3em;
+      }
+
+      p {
+        color: $color-secondary;
+        font-size: 1.4em;
+      }
+    }
+
+    .cardImg {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin-left: 3em;
+
+      a {
+        div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          backface-visibility: hidden;
+          transition: 1s;
+        }
+
+        .front {
+          background-image: url("src/assets/img/imgportada.jpg");
+          clip-path: circle(50%);
+          transform: perspective(500px) rotateY(0deg);
+          background-size: contain;
+          animation: border-animation 3s infinite;
+          border: 10px solid rgb(35, 102, 236);
+          border-radius: 50%;
+        }
+
+        .back {
+          background-image: url("src/assets/img/linkedin.jpg");
+          clip-path: circle(50%);
+          transform: perspective(500px) rotateY(180deg);
+          background-size: cover;
+          animation: border-animation 3s infinite;
+          border: 10px solid rgb(35, 102, 236);
+          border-radius: 50%;
+        }
+
+      }
+
+      &:hover {
+        .front {
+          transform: perspective(500px) rotateY(180deg);
+        }
+
+        .back {
+          transform: perspective(500px) rotateY(360deg);
+        }
+      }
+    }
+  }
+
+  .divisionBar {
+    position: absolute;
+    bottom: -3em;
+    width: 100%;
+    height: 5em;
+    background-image: url("src/assets/img/division.png");
+    background-size: contain;
+    filter: drop-shadow(0 0.5em 0.5em hsla(0, 0%, 0%, 0.401));
+  }
+}
+
+@media (max-width: 1117px) {
+  .headerContainer {
+    padding: 0px 0px 60px 0px;
+
+    .headerFlex {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 10px;
+
+      .titleName {
+        text-align: center;
+      }
+
+      .cardImg {
+        margin-left: 0em;
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .headerContainer {
+
+    .headerFlex {
+      .titleName {
+        font-size: 16px;
+      }
+
+      .cardImg {
+        margin-bottom: 1em;
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .divisionBar {
+      bottom: -2em;
+      height: 3em;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .headerContainer {
+
+    .headerFlex {
+      padding: 10px;
+
+      .titleName {
+        font-size: 12px;
+      }
+
+      .cardImg {
+        margin-bottom: 0.5em;
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .headerContainer {
+    .headerFlex {
+      .titleName {
+        font-size: 9px;
+      }
+    }
+
+    .divisionBar {
+      bottom: -1.2em;
+      height: 2em;
+    }
+  }
+}

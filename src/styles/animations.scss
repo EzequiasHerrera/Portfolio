@@ -1,0 +1,36 @@
+@keyframes border-animation {
+  0% {
+    border-color: #ff0044;
+  }
+
+  20% {
+    border-color: #bc40ff;
+  }
+
+  40% {
+    border-color: #2519ff;
+  }
+
+  60% {
+    border-color: #ff5405;
+  }
+
+  80% {
+    border-color: #ff9900;
+  }
+
+  100% {
+    border-color: #ff0044;
+  }
+}
+
+@keyframes opening-animation {
+  0% {
+    padding-bottom: 0px;
+  }
+  
+  100% {
+    padding-top: 200px;
+    padding-bottom: 100vh;
+  }
+}
