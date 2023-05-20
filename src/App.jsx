@@ -4,7 +4,7 @@ import Secciones from './components/Secciones/Secciones'
 import AcercaDeMi from './views/AcercaDeMi/AcercaDeMi'
 import Contacto from './views/Contacto/Contacto'
 import Proyectos from './views/Proyectos/Proyectos'
-import { Navigate, Route, Routes } from 'react-router-dom'
+// import { Navigate, Route, Routes } from 'react-router-dom'
 
 function App() {
 
@@ -12,12 +12,15 @@ function App() {
     <>
       <Header />
       <Secciones />
-      <Routes>
+      <Contacto />
+      <AcercaDeMi />
+      <Proyectos />
+      {/* <Routes>
         <Route path="/" element={<Navigate to="home" />} />
         <Route path="/acerca-de-mi" element={<AcercaDeMi />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/proyectos" element={<Proyectos />} />
-      </Routes>
+      </Routes> */}
     </>
   )
 }
