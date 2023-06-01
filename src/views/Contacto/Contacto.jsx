@@ -35,11 +35,11 @@ const Contacto = () => {
 
     return (
       <div className={styles.card} key={card.id} style={{ backgroundImage: `url(${card.background})` }} >
-        <div className={styles.cardIcon}><img src={`src/assets/img/${card.icono}`} alt="" /></div>
-        <div className={styles.cardImg} style={{ backgroundImage: `url(src/assets/img/${card.imagen})` }}></div>
+        <div className={styles.cardIcon}><img src={`../img/${card.icono}`} alt="" /></div>
+        <div className={styles.cardImg} style={{ backgroundImage: `url(../img/${card.imagen})` }}></div>
         {condition ?
           <p className={styles.cardText}>{card.texto}</p>
-          : <img className={styles.cardBottom} src={`src/assets/img/${card.iconoAbajo}`} alt="" />}
+          : <img className={styles.cardBottom} src={`../img/${card.iconoAbajo}`} alt="" />}
       </div>
     );
   });
