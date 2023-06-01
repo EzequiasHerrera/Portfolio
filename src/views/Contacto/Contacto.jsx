@@ -5,7 +5,7 @@ const Contacto = () => {
   const cards = [
     {
       id: 1,
-      background: "src/assets/img/fondo.png",
+      background: "../img/fondo.png",
       icono: "icono_hoja.png",
       imagen: "personaje3D.png",
       texto: "DESCARGA MI CURRICULUM",
@@ -13,7 +13,7 @@ const Contacto = () => {
     },
     {
       id: 2,
-      background: "src/assets/img/fondo2.png",
+      background: "../img/fondo2.png",
       icono: "image.png",
       imagen: "imgportada.jpg",
       texto: "",
@@ -21,7 +21,7 @@ const Contacto = () => {
     },
     {
       id: 3,
-      background: "src/assets/img/fondos1.png",
+      background: "../img/fondos1.png",
       icono: "icono_gmail.png",
       imagen: "PersonajeCV.jpg",
       texto: "CONTACTAME CON UN MAIL",
