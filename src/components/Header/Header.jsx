@@ -2,9 +2,7 @@ import styles from './header.module.scss';
 import '../../../node_modules/animate.css/animate.min.css'
 
 const Header = () => {
-
-
-
+  
   const paddingBottom = {
     paddingBottom: '30px'
   };

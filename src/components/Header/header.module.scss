@@ -70,7 +70,7 @@
         }
 
         .front {
-          background-image: url("src/assets/img/imgportada.jpg");
+          background-image: url("../img/imgportada.jpg");
           clip-path: circle(50%);
           transform: perspective(500px) rotateY(0deg);
           background-size: contain;
@@ -80,7 +80,7 @@
         }
 
         .back {
-          background-image: url("src/assets/img/linkedin.jpg");
+          background-image: url("../img/linkedin.jpg");
           clip-path: circle(50%);
           transform: perspective(500px) rotateY(180deg);
           background-size: cover;

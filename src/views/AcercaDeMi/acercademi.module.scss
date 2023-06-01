@@ -3,7 +3,7 @@
 
 .container {
 
-  background-image: url("src/assets/img/hoja.png");
+  background-image: url("../img/hoja.png");
   background-size: cover;
   height: 100vh;
   font-size: 40px;
@@ -12,7 +12,7 @@
 
   li {
     font-family: 'Architects Daughter', cursive;
-    background-image: url('src/assets/img/estrella.png');
+    background-image: url('../img/estrella.png');
     background-size: 2em;
     background-repeat: no-repeat;
     padding-left: 20px;
