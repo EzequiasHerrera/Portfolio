@@ -1,28 +1,24 @@
-import './App.scss'
-import Header from './components/Header/Header.jsx'
-import Secciones from './components/Secciones/Secciones'
-import AcercaDeMi from './views/AcercaDeMi/AcercaDeMi'
-import Contacto from './views/Contacto/Contacto'
-import Proyectos from './views/Proyectos/Proyectos'
-// import { Navigate, Route, Routes } from 'react-router-dom'
+import './App.scss';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header/Header.jsx';
+import Secciones from './components/Secciones/Secciones';
+import AcercaDeMi from './views/AcercaDeMi/AcercaDeMi';
+import Contacto from './views/Contacto/Contacto';
+import Proyectos from './views/Proyectos/Proyectos';
 
 function App() {
-
   return (
-    <>
+    <Router>
       <Header />
       <Secciones />
-      <Contacto />
-      <AcercaDeMi />
-      <Proyectos />
-      {/* <Routes>
-        <Route path="/" element={<Navigate to="home" />} />
+      <Routes>
         <Route path="/acerca-de-mi" element={<AcercaDeMi />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/proyectos" element={<Proyectos />} />
-      </Routes> */}
-    </>
-  )
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

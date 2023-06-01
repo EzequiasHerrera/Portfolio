@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./secciones.module.scss";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
-import { Link } from "react-router-dom";
 
 const Secciones = () => {
 
@@ -23,10 +23,10 @@ const Secciones = () => {
   return (
     <div className={styles.navegador}>
       <div className={styles.container} ref={container3D}>
-        <div className={styles.front}><Link to={"/home"}>INICIO</Link></div>
-        <div className={styles.back}><Link to={"/proyectos"}>PROYECTOS</Link></div>
-        <div className={styles.left}><Link to={"/acerca-de-mi"}>ACERCA DE MÍ</Link></div>
-        <div className={styles.right}><Link to={"/contacto"}>CONTACTO</Link></div>
+        <Link to="/" className={styles.front}>INICIO</Link>
+        <Link to="/proyectos" className={styles.back}>PROYECTOS</Link>
+        <Link to="/acerca-de-mi" className={styles.left}>ACERCA DE MÍ</Link>
+        <Link to="/contacto" className={styles.right}>CONTACTO</Link>
       </div>
       <button className={`${styles.arrowLeft} arrow`} onClick={next}><SlArrowLeft /></button>
       <button className={`${styles.arrowRight} arrow`} onClick={previous}><SlArrowRight /></button>
