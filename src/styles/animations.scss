@@ -26,11 +26,81 @@
 
 @keyframes opening-animation {
   0% {
-    padding-bottom: 0px;
+    height: 20vh;
   }
-  
+
   100% {
-    padding-top: 200px;
-    padding-bottom: 100vh;
+    height: 107vh;
+  }
+}
+
+@keyframes tv_brightness {
+  0% {
+    filter: brightness(100%) blur(10%) drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.293));
+  }
+
+  10% {
+    filter: brightness(80%) blur(100%);
+  }
+
+  20% {
+    filter: brightness(100%) blur(10%);
+  }
+
+  30% {
+    filter: brightness(80%);
+  }
+
+  40% {
+    filter: brightness(100%);
+  }
+
+  50% {
+    filter: brightness(120%) drop-shadow(0px 0px 10px rgb(255, 255, 255));
+  }
+
+  60% {
+    filter: brightness(80%);
+  }
+
+  75% {
+    filter: brightness(100%) blur(100%);
+  }
+
+  85% {
+    filter: brightness(80%) blur(10%);
+  }
+
+  90% {
+    filter: brightness(100%);
+  }
+
+  95% {
+    filter: brightness(80%);
+  }
+
+  100% {
+    filter: brightness(100%) drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.293));
+  }
+}
+
+@keyframes tv_static {
+  0% {
+    opacity: 40%;
+    top: 100%;
+    bottom: 0%;
+    height: 0.5em;
+  }
+
+  50% {
+    opacity: 100%;
+    height: 1.5em;
+  }
+
+  100% {
+    opacity: 40%;
+    top: 0%;
+    bottom: 100%;
+    height: 0.5em;
   }
 }

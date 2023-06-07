@@ -23,10 +23,10 @@ const Secciones = () => {
   return (
     <div className={styles.navegador}>
       <div className={styles.container} ref={container3D}>
-        <Link to="/" className={styles.front}>INICIO</Link>
-        <Link to="/proyectos" className={styles.back}>PROYECTOS</Link>
-        <Link to="/acerca-de-mi" className={styles.left}>ACERCA DE MÍ</Link>
-        <Link to="/contacto" className={styles.right}>CONTACTO</Link>
+        <Link to="/Portfolio/" className={styles.front}>INICIO</Link>
+        <Link to="/Portfolio/proyectos/animacion" className={styles.back}>PROYECTOS</Link>
+        <Link to="/Portfolio/acerca-de-mi" className={styles.left}>ACERCA DE MÍ</Link>
+        <Link to="/Portfolio/contacto" className={styles.right}>CONTACTO</Link>
       </div>
       <button className={`${styles.arrowLeft} arrow`} onClick={next}><SlArrowLeft /></button>
       <button className={`${styles.arrowRight} arrow`} onClick={previous}><SlArrowRight /></button>

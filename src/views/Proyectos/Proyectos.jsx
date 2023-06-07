@@ -25,7 +25,7 @@ const Proyectos = () => {
 
   return (
     <>
-      <div className={styles.container}>
+      <div className={`${styles.container} animate__animated animate__fadeInUpBig`}>
         {projectList.map((project) => (
           <div key={project.id} className={styles.projectContainer} style={project.id % 2 != 0 ? { flexDirection: 'row' } : { flexDirection: 'row-reverse' }}>
 
@@ -39,7 +39,7 @@ const Proyectos = () => {
             </div>
 
             <div className={styles.textCard}>
-              <img className={styles.pin} src="../img/pin_rojo.png" alt="pin_rojo" />
+              <img className={styles.pin} src="Portfolio/img/pin_rojo.png" alt="pin_rojo" />
               <p>{`${project.text}`}</p>
             </div>
 

@@ -6,6 +6,8 @@ import Secciones from './components/Secciones/Secciones';
 import AcercaDeMi from './views/AcercaDeMi/AcercaDeMi';
 import Contacto from './views/Contacto/Contacto';
 import Proyectos from './views/Proyectos/Proyectos';
+import ProyectosAnimacion from './views/ProyectosAnimacion/ProyectosAnimacion';
+import SeleccionProyectos from './components/SeleccionProyectos/SeleccionProyectos';
 
 function App() {
   return (
@@ -13,9 +15,10 @@ function App() {
       <Header />
       <Secciones />
       <Routes>
-        <Route path="/acerca-de-mi" element={<AcercaDeMi />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/proyectos" element={<Proyectos />} />
+        <Route path="/Portfolio/acerca-de-mi" element={<AcercaDeMi />} />
+        <Route path="/Portfolio/contacto" element={<Contacto />} />
+        <Route path="/Portfolio/proyectos/animacion" element={<><SeleccionProyectos /><ProyectosAnimacion /></>} />
+        <Route path="/Portfolio/proyectos/programacion" element={<><SeleccionProyectos /><Proyectos /></>} />
       </Routes>
     </Router>
   );
