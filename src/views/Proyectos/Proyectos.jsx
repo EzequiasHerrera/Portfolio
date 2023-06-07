@@ -39,7 +39,7 @@ const Proyectos = () => {
             </div>
 
             <div className={styles.textCard}>
-              <img className={styles.pin} src="Portfolio/img/pin_rojo.png" alt="pin_rojo" />
+              <img className={styles.pin} src="img/pin_rojo.png" alt="pin_rojo" />
               <p>{`${project.text}`}</p>
             </div>
 
