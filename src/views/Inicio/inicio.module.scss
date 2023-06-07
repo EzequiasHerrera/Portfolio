@@ -1,0 +1,17 @@
+@import "src/styles/colors";
+
+.flex {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100px;
+  }
+}
+
+.container {
+  color: $color;
+  font-weight: 600;
+  text-align: center;
+  padding: 50px;
+}

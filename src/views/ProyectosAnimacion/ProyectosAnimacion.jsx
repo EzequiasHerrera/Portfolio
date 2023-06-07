@@ -31,12 +31,21 @@ const ProyectosAnimacion = () => {
       img: "animaciones3.png",
       link: "https://www.youtube.com/watch?v=NDEnAzy4G_A&ab_channel=EZEQU%C3%8DAS",
       text: "Desarrollamos una animación para el single DIRÉ utilizando Animate CC y Photoshop, diseñando de cero tanto los escenarios, como los personajes."
+    },
+    {
+      id: 5,
+      title: "Diseño 3D pixelart de mate y yerba",
+      img: "diseñocubico.jpg",
+      link: "https://www.youtube.com/watch?v=NDEnAzy4G_A&ab_channel=EZEQU%C3%8DAS",
+      text: "Forma parte de una modificación para el videojuego MINECRAFT, desde el diseño 3D hasta la textura y el funcionamiento real en el entorno de programación."
     }
   ]
 
   return (
     <>
       <div className={`${styles.container} animate__animated animate__fadeInUpBig`}>
+        <img className={styles.personajes} src="../img/Personajes.png" alt="personajes_diseñados" />
+
         {projectList.map((project) => (
           <div key={project.id} className={styles.projectContainer} style={project.id % 2 != 0 ? { flexDirection: 'row' } : { flexDirection: 'row-reverse' }}>
 

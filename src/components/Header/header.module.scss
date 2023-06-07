@@ -89,9 +89,8 @@
           border: 10px solid rgb(35, 102, 236);
           border-radius: 50%;
         }
-
       }
-
+      
       &:hover {
         .front {
           transform: perspective(500px) rotateY(180deg);
@@ -183,8 +182,23 @@
       .titleName {
         font-size: 9px;
       }
-    }
 
+      .cardImg {
+        width: 200px;
+        height: 200px;
+
+        a {
+          .front {
+            border: 10px solid;
+          }
+
+          .back {
+            border: 10px solid;
+          }
+        }
+      }
+    }
+    
     .divisionBar {
       bottom: -1.2em;
       height: 2em;

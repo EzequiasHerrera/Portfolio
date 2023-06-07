@@ -8,6 +8,15 @@
   justify-content: center;
   font-size: 20px;
 
+  .personajes {
+    width: 30em;
+    transition: transform 60ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   .projectContainer {
     margin: 1.9em;
     display: flex;
@@ -69,8 +78,8 @@
 
       .pin {
         position: absolute;
-        width: 6em;
-        top: -3em;
+        width: 5em;
+        top: -1em;
         left: 40%;
         filter: drop-shadow(0px 10px 5px rgba(143, 35, 35, 0.457));
       }
@@ -155,7 +164,9 @@
       .textCard {
         .pin {}
 
-        p {}
+        p {
+          font-size: 1.5em;
+        }
       }
     }
   }
@@ -165,6 +176,9 @@
   .container {
     font-size: 18px;
 
+    .personajes {
+      width: 18em;
+    }
 
     .projectContainer {
 

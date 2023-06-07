@@ -9,7 +9,8 @@ const Contacto = () => {
       icono: "icono_hoja.png",
       imagen: "personaje3D.png",
       texto: "DESCARGA MI CURRICULUM",
-      iconoAbajo: ""
+      iconoAbajo: "",
+      link: "public/CV/CV-Ezequias_Herrera.pdf"
     },
     {
       id: 2,
@@ -17,7 +18,8 @@ const Contacto = () => {
       icono: "image.png",
       imagen: "imgportada.jpg",
       texto: "",
-      iconoAbajo: "icono_linkedin.png"
+      iconoAbajo: "icono_linkedin.png",
+      link: "https://www.linkedin.com/in/ezequiasherrera"
     },
     {
       id: 3,
@@ -25,25 +27,23 @@ const Contacto = () => {
       icono: "icono_gmail.png",
       imagen: "PersonajeCV.jpg",
       texto: "CONTACTAME CON UN MAIL",
-      iconoAbajo: ""
+      iconoAbajo: "",
+      link: ""
     },
   ]
 
   const generarCards = cards.map((card) => {
     const condition = (card.texto != "") ? true : false;
-    console.log(condition);
-
     return (
-      <div className={styles.card} key={card.id} style={{ backgroundImage: `url(${card.background})` }} >
+      <a href={card.link} target="_blank" className={styles.card} key={card.id} style={{ backgroundImage: `url(${card.background})` }} download={card.id === 1 ? "" : null}>
         <div className={styles.cardIcon}><img src={`img/${card.icono}`} alt="" /></div>
         <div className={styles.cardImg} style={{ backgroundImage: `url(img/${card.imagen})` }}></div>
         {condition ?
           <p className={styles.cardText}>{card.texto}</p>
           : <img className={styles.cardBottom} src={`img/${card.iconoAbajo}`} alt="" />}
-      </div>
+      </a>
     );
   });
-
 
   return (
     <div className={styles.cardContainer}>{generarCards}</div>
